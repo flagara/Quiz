@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "D/MV",
-    "slug": "D/MV",
+    "name": "uhh",
+    "slug": "uhh",
     "privacy": "unlisted",
     "sdkVersion": "24.0.0",
     "version": "1.0.0",
@@ -21,11 +21,11 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.codehs.297601D/MV",
+      "bundleIdentifier": "com.codehs.297601uhh",
       "buildNumber": "1"
     },
     "android": {
-      "package": "com.codehs.297601D/MV",
+      "package": "com.codehs.297601uhh",
       "versionCode": 1
     }
   }

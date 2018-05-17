@@ -62,26 +62,18 @@ export default class App extends Component {
     };
 
     var runProgram = function() {
-        var density = readFloat(" What is the Density of the object? ");
-var mass = readFloat( " What is the Mass of the object? ");
-var volume = readFloat ( " What is the Volume of the object ?")
-var Dmv = readBoolean( " Finding Density? ");
-var dMv = readBoolean ( " Finding Mass? " );
-var dmV = readBoolean ( " Finding Volume? ");
-var Yes = true;
-var No = false;
-if (Yes) {
-    println (" The Density of your object is " + mass / volume + " g/cm³ ")
-} else {
-    println( " N/A " )
+        dankify();
+function dankify()
+{
+var back = new WebImage("https://sites.google.com/a/wethersfield.me/lily-bello-ics-at-whs-fall-2015/_/rsrc/1443788275942/home/epic-computer-science-memes/meme.jpg");
+//add(copter); // Adding copter to screen");
+back.setSize(getWidth(), getHeight());
+back.setPosition(0, 0);
+add(back); 
+var tunes = new Audio("http://k003.kiwi6.com/hotlink/hc1y7jogwq/SFM_Slam_Jam.mp3");
+tunes.play();
+tunes.loop = true;
 }
-
-
-if (Yes) {
-    println( " The Mass of your object is " + density * volume + " g " );
-}
- 
-
 
 
         if (typeof start === 'function') {
