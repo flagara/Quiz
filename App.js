@@ -62,180 +62,25 @@ export default class App extends Component {
     };
 
     var runProgram = function() {
-        var a;
-var b;
-var c;
-var d;
-var e;
-var f;
-var g;
-var h;
-var i;
-var j;
+        var density = readFloat(" What is the Density of the object? ");
+var mass = readFloat( " What is the Mass of the object? ");
+var volume = readFloat ( " What is the Volume of the object ?")
+var Dmv = readBoolean( " Finding Density? ");
+var dMv = readBoolean ( " Finding Mass? " );
+var dmV = readBoolean ( " Finding Volume? ");
+var Yes = true;
+var No = false;
+if (Yes) {
+    println (" The Density of your object is " + mass / volume + " g/cm³ ")
+} else {
+    println( " N/A " )
+}
 
-var a_ans;
-var b_ans;
-var c_ans;
-var d_ans;
-var e_ans;
-var f_ans;
-var g_ans;
-var h_ans;
-var i_ans;
-var j_ans;
-/* These variables above are Global Variables 
-that are the questions that will be later used
-*/
-function start(){
-quizCreation();    
-    }
-/* This is the main program that Creates and subsequently 
-asks the questions of the quiz */
-function quizCreation(x){
-for(var i = 0; i < 10; i++){
-/* This For Loop creates the question based on the 
-number of times the loop runs*/
-    if(i = 1){
-        a = readLine("Enter Question ");
-        // Above, the variable is set to a User Inputted Question//
-        if(a == "END"){
-            break;
-        }
-        // Above, the Sentinel Ends the program when "END" is typed by the User//
-        a_ans = readLine("Enter Answer ");
-        // The user creates the correct answer to their question //
-        var question = readLine(a + " ");
-        // The question is asked //
-        if(question == a_ans){
-            println("Correct");
-        /* This is what prints when the correct answer is typed 
-        Below, is what is printed when the wrong answer is inputted.
-        */
-        }else{
-            println("Incorrect")
-        }
-    }
-    if(i = 2){
-        b = readLine("Enter Question ");
-        if(b == "END"){
-            break;
-        }
-        b_ans = readLine("Enter Answer ");
-        var question2 = readLine(b + " ");
-    if(question2 == b_ans){
-            println("Correct");
-        }else{
-            println("Incorrect")
-        }
-    }
-    if(i = 3){
-        c = readLine("Enter Question ");
-        if(c == "END"){
-            break;
-        }
-        c_ans = readLine("Enter Answer ");
-        var question3 = readLine(c + " ");
-    if(question3 == c_ans){
-            println("Correct");
-        }else{
-            println("Incorrect")
-        }
-    }
-    if(i = 4){
-        d = readLine("Enter Question "); 
-        if(d == "END"){
-            break;
-        }
-        d_ans = readLine("Enter Answer ");
-        var question4 = readLine(d + " ");
-    if(question4 == d_ans){
-            println("Correct");
-        }else{
-            println("Incorrect")
-        }
-    }
-    if(i = 5){
-        e = readLine("Enter Question "); 
-        if(e == "END"){
-            break;
-        }
-        e_ans = readLine("Enter Answer ");
-        var question5 = readLine(e + " ");
-    if(question5 == e_ans){
-            println("Correct");
-        }else{
-            println("Incorrect")
-        }
-    }
-    if(i = 6){
-        f = readLine("Enter Question "); 
-        if(f == "END"){
-            break;
-        }
-        f_ans = readLine("Enter Answer ");
-        var question6 = readLine(f + " ");
-    if(question6 == f_ans){
-            println("Correct");
-        }else{
-            println("Incorrect")
-        }
-    }
-    if(i = 7){
-        g = readLine("Enter Question "); 
-        if(g == "END"){
-            break;
-        }
-        g_ans = readLine("Enter Answer ");
-        var question7 = readLine(g + " ");
-    if(question7 == g_ans){
-            println("Correct");
-        }else{
-            println("Incorrect")
-        }
-    }
-    if(i = 8){
-        h = readLine("Enter Question "); 
-        if(h == "END"){
-            break;
-        }
-        h_ans = readLine("Enter Answer ");
-        var question8 = readLine(h + " ");
-    if(question8 == h_ans){
-            println("Correct");
-        }else{
-            println("Incorrect")
-        }
-    }
-    if(i = 9){
-        i = readLine("Enter Question "); 
-        if(i == "END"){
-            break;
-        }
-        i_ans = readLine("Enter Answer ");
-        var question9 = readLine(i + " ");
-    if(question9 == i_ans){
-            println("Correct");
-        }else{
-            println("Incorrect")
-        }
-    }
-    if(i = 10){
-        j = readLine("Enter Question "); 
-        if(j == "END"){
-            break;
-        }
-        j_ans = readLine("Enter Answer ");
-        var question10 = readLine(j + " ");
-        if(question10 == j_ans){
-            println("Correct");
-        }else{
-            println("Incorrect")
-        }
-    }
-    
-   
+
+if (Yes) {
+    println( " The Mass of your object is " + density * volume + " g " );
 }
-}
+ 
 
 
 
